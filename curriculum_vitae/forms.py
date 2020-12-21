@@ -33,7 +33,7 @@ class CVForm(forms.Form):
     current_work_place_name = forms.CharField(max_length=256)
     applying_in = forms.ChoiceField(choices=POSITION_CHOICE)
     expected_salary = forms.IntegerField(max_value=60000, min_value=15000, required=True)
-    field_buzz_reference = forms.CharField(max_length=256, required=False)
+    field_buzz_reference = forms.CharField(max_length=256, required=True)
     github_project_url = forms.URLField(max_length=512)
     cv_file = forms.FileField()
 
